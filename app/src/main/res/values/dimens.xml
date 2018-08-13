@@ -1,0 +1,24 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- 主界面列表的item -->
+    <dimen name="pad_item_left">20dp</dimen>
+    <dimen name="textsize_item">20sp</dimen>
+    <dimen name="radius_item">10dp</dimen>
+
+    <!-- 添加股票界面 -->
+    <dimen name="addact_iv_size">30dp</dimen>
+    <dimen name="addact_item_padbottom">10dp</dimen>
+    <dimen name="item_et_width">80dp</dimen>
+    <dimen name="item_et_height">30dp</dimen>
+    <dimen name="item_et_marginTop">10dp</dimen>
+    <dimen name="item_et_marginLR">10dp</dimen>
+    <dimen name="item_et_marginLR2">10dp</dimen>
+    <dimen name="item_et_textsize">15sp</dimen>
+
+    <!-- 比较内容界面 -->
+    <dimen name="conact_textsize">15sp</dimen>
+    <dimen name="conact_tv_width">100dp</dimen>
+    <dimen name="conact_tv_height">30dp</dimen>
+
+</resources>

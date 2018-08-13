@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="@dimen/conact_tv_height">
+
+    <TextView
+        android:id="@+id/item_content_date"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="match_parent"
+        android:text="时间"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_shape"/>
+
+    <TextView
+        android:id="@+id/item_content_score"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="match_parent"
+        android:text="总分"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_shape"/>
+
+    <TextView
+        android:id="@+id/item_content_income"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="match_parent"
+        android:text="营业收入"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_shape"/>
+
+    <TextView
+        android:id="@+id/item_content_profit"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="match_parent"
+        android:text="营业利润"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_shape"/>
+
+    <TextView
+        android:id="@+id/item_content_margin"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="match_parent"
+        android:text="毛利率"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_shape"/>
+
+    <TextView
+        android:id="@+id/item_content_cost"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="match_parent"
+        android:text="期间费用"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_shape"/>
+
+    <TextView
+        android:id="@+id/item_content_inventory"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="match_parent"
+        android:text="周转率"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_shape"/>
+
+    <TextView
+        android:id="@+id/item_content_cash"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="match_parent"
+        android:text="现金流量"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_shape"/>
+
+    <TextView
+        android:id="@+id/item_content_return"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="match_parent"
+        android:text="收益率"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_shape"/>
+
+    <TextView
+        android:id="@+id/item_content_reward"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="match_parent"
+        android:text="报酬率"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_shape"/>
+
+    <TextView
+        android:id="@+id/item_content_pbv"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="match_parent"
+        android:text="市净率"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_shape"/>
+
+    <TextView
+        android:id="@+id/item_content_peg"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="match_parent"
+        android:text="PEG"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_shape"/>
+</LinearLayout>

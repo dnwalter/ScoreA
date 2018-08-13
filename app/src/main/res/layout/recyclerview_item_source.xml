@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/item_shape"
+              android:id="@+id/item_llyt_root"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp"
+              android:orientation="vertical">
+
+    <!-- 股票名和季度 -->
+    <include
+        android:id="@+id/item_name"
+        layout="@layout/layout_source_item"/>
+    <!-- 股票号和分数 -->
+    <include
+        android:id="@+id/item_num"
+        layout="@layout/layout_source_item"/>
+
+</LinearLayout>

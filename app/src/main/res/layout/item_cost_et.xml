@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_sale"
+        android:layout_width="@dimen/item_et_width"
+        android:layout_height="@dimen/item_et_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/item_et_marginTop"
+        android:background="@drawable/et_shape"
+        android:hint="销售费用"
+        android:inputType="numberSigned|numberDecimal"
+        android:maxLines="1"
+        android:textColor="#000000"
+        android:textColorHint="#bcbcbc"
+        android:textSize="@dimen/item_et_textsize"/>
+
+    <EditText
+        android:id="@+id/et_m"
+        android:layout_width="@dimen/item_et_width"
+        android:layout_height="@dimen/item_et_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/item_et_marginTop"
+        android:background="@drawable/et_shape"
+        android:inputType="numberSigned|numberDecimal"
+        android:hint="管理费用"
+        android:maxLines="1"
+        android:textColor="#000000"
+        android:textColorHint="#bcbcbc"
+        android:textSize="@dimen/item_et_textsize"/>
+
+    <EditText
+        android:id="@+id/et_f"
+        android:layout_width="@dimen/item_et_width"
+        android:layout_height="@dimen/item_et_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/item_et_marginTop"
+        android:background="@drawable/et_shape"
+        android:inputType="numberSigned|numberDecimal"
+        android:hint="财务费用"
+        android:maxLines="1"
+        android:textColor="#000000"
+        android:textColorHint="#bcbcbc"
+        android:textSize="@dimen/item_et_textsize"/>
+
+    <EditText
+        android:id="@+id/et_income"
+        android:layout_width="@dimen/item_et_width"
+        android:layout_height="@dimen/item_et_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/item_et_marginTop"
+        android:background="@drawable/et_shape"
+        android:inputType="numberSigned|numberDecimal"
+        android:hint="营业收入"
+        android:maxLines="1"
+        android:textColor="#000000"
+        android:textColorHint="#bcbcbc"
+        android:textSize="@dimen/item_et_textsize"/>
+
+</LinearLayout>

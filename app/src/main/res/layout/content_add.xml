@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/addact_et_name"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_et_height"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/item_et_marginLR2"
+                android:layout_marginRight="@dimen/item_et_marginLR2"
+                android:background="@drawable/et_shape"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="#bcbcbc"
+                android:textSize="@dimen/item_et_textsize"
+                android:hint="股票名"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/addact_et_num"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_et_height"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/item_et_marginLR2"
+                android:layout_marginRight="@dimen/item_et_marginLR2"
+                android:background="@drawable/et_shape"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="#bcbcbc"
+                android:textSize="@dimen/item_et_textsize"
+                android:hint="股票号"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/addact_et_date"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_et_height"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/item_et_marginLR2"
+                android:layout_marginRight="@dimen/item_et_marginLR2"
+                android:background="@drawable/et_shape"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="#bcbcbc"
+                android:textSize="@dimen/item_et_textsize"
+                android:hint="如2018-1"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/addact_et_type"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_et_height"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/item_et_marginLR2"
+                android:layout_marginRight="@dimen/item_et_marginLR2"
+                android:background="@drawable/et_shape"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="#bcbcbc"
+                android:textSize="@dimen/item_et_textsize"
+                android:hint="行业"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <com.ousy.scorea.views.SourceItemView
+            android:id="@+id/siv_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTag="1"
+            app:nowHint="增长率%"
+            app:title="营业收入增长率"/>
+
+        <com.ousy.scorea.views.SourceItemView
+            android:id="@+id/siv_profit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTag="2"
+            app:lastVisibility="true"
+            app:nowHint="营业利润"
+            app:title="营业利润增长率"/>
+
+        <com.ousy.scorea.views.SourceItemView
+            android:id="@+id/siv_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTag="3"
+            app:nowHint="毛利率%"
+            app:title="毛利率"
+            app:yearOneVisibility="true"/>
+
+        <include
+            android:id="@+id/siv_cost"
+            layout="@layout/item_cost"/>
+
+        <com.ousy.scorea.views.SourceItemView
+            android:id="@+id/siv_inventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTag="5"
+            app:lastVisibility="true"
+            app:nowHint="周转率"
+            app:title="存货周转率"
+            app:yearOneVisibility="true"/>
+
+        <com.ousy.scorea.views.SourceItemView
+            android:id="@+id/siv_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTag="6"
+            app:nowHint="现金流量"
+            app:sourceEnable="true"
+            app:title="每股经营性现金流量"
+            app:yearOneVisibility="true"
+            app:yearTwoVisibility="true"/>
+
+        <com.ousy.scorea.views.SourceItemView
+            android:id="@+id/siv_return"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTag="7"
+            app:lastVisibility="true"
+            app:nowHint="收益率%"
+            app:title="净资产收益率"
+            app:yearOne2Visibility="false"
+            app:yearOne3Visibility="false"
+            app:yearOneVisibility="true"/>
+
+        <com.ousy.scorea.views.SourceItemView
+            android:id="@+id/siv_reward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTag="8"
+            app:lastVisibility="true"
+            app:nowHint="报酬率%"
+            app:title="总资产报酬率"
+            app:yearOne2Visibility="false"
+            app:yearOne3Visibility="false"
+            app:yearOneVisibility="true"/>
+
+        <com.ousy.scorea.views.SourceItemView
+            android:id="@+id/siv_pbv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTag="9"
+            app:nowHint="市净率"
+            app:sourceEnable="true"
+            app:title="市净率"/>
+
+        <com.ousy.scorea.views.SourceItemView
+            android:id="@+id/siv_peg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTag="9"
+            app:nowHint="市盈率"
+            app:sourceEnable="true"
+            app:title="市盈率相对盈利增长比率"
+            app:yearOneVisibility="true"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

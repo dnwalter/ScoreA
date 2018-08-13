@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SourceItemView">　　
+        <attr name="nowEnable" format="boolean"/>　　
+        <attr name="lastVisibility" format="boolean"/>　　
+        <attr name="yearOneVisibility" format="boolean"/>　　
+        <attr name="yearTwoVisibility" format="boolean"/>　
+        <attr name="yearOne2Visibility" format="boolean"/>　
+        <attr name="yearOne3Visibility" format="boolean"/>
+        <attr name="sourceEnable" format="boolean"/>　
+
+        <attr name="nowHint" format="string"/>　　
+        <attr name="title" format="string"/>
+
+        <attr name="buttonTag" format="integer"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/conact_tv_name"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="@dimen/conact_tv_height"
+        android:text="股票"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/tv_shape"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/conact_rv_name"
+        android:layout_width="@dimen/conact_tv_width"
+        android:layout_height="match_parent"
+        android:background="#00ffff"
+        android:layout_below="@id/conact_tv_name"/>
+
+    <com.ousy.scorea.views.CustomHScrollView
+        android:id="@+id/conact_hsv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/conact_tv_height"
+        android:layout_toRightOf="@id/conact_tv_name"
+        android:scrollbars="none">
+
+       <include layout="@layout/recyclerview_item_content"/>
+
+    </com.ousy.scorea.views.CustomHScrollView>
+
+    <com.ousy.scorea.views.CustomHScrollView
+        android:id="@+id/conact_hsv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_toRightOf="@id/conact_rv_name"
+        android:layout_below="@id/conact_hsv_title"
+        android:background="#ffff00">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/conact_rv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </com.ousy.scorea.views.CustomHScrollView>
+</RelativeLayout>
