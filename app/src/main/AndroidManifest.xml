@@ -25,9 +25,14 @@
             android:name=".activities.AddActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
-
-        <activity android:name=".activities.ContentActivity"
-                  android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activities.ContentActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activities.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

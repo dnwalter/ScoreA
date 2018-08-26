@@ -1,97 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ousy.scorea.activities.MainActivity">
+    android:orientation="vertical">
 
-    <android.support.design.widget.AppBarLayout
+    <include layout="@layout/content_appbar_title"/>
+
+    <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
 
-            <LinearLayout
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll|snap"
+                app:toolbarId="@+id/toolbar">
 
-                <com.ousy.scorea.views.MySpinner
-                    android:id="@+id/mysp_type"
-                    android:layout_width="0dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1.5"/>
-
-                <LinearLayout
-                    android:layout_width="0dp"
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_margin="15dp"
                     android:layout_weight="6"
-                    android:background="#ffffff"
-                    android:orientation="horizontal">
+                    app:layout_collapseMode="parallax">
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_search"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_search"/>
 
                     <EditText
-                        android:id="@+id/et_num"
-                        android:layout_width="0dp"
+                        android:id="@+id/mainact_et_num"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:background="@null"
+                        android:layout_toLeftOf="@+id/imgbtn_search"
+                        android:background="#ffffff"
                         android:hint="股票名称/股票号"
+                        android:inputType="number"
+                        android:maxLines="1"
                         android:paddingLeft="10dp"
                         android:textColor="#000000"
                         android:textColorHint="#bcbcbc"
                         android:textSize="15sp"/>
 
-                    <ImageButton
-                        android:id="@+id/imgbtn_search"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/ic_search"/>
+                </RelativeLayout>
 
-                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
 
-                <com.ousy.scorea.views.MySpinner
-                    android:id="@+id/mysp_sort"
-                    android:layout_width="0dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"/>
+        </android.support.design.widget.AppBarLayout>
 
-            </LinearLayout>
-        </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_recyclerview_shares"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
-    </android.support.design.widget.AppBarLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@android:drawable/ic_input_add"/>
 
-    <include layout="@layout/content_main"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_content"/>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_input_add"/>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|start"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/ic_content"/>
-
-</android.support.design.widget.CoordinatorLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

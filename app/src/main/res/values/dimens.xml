@@ -20,5 +20,7 @@
     <dimen name="conact_textsize">15sp</dimen>
     <dimen name="conact_tv_width">100dp</dimen>
     <dimen name="conact_tv_height">30dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 
 </resources>
